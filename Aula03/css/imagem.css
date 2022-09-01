@@ -1,0 +1,28 @@
+.dimensao {
+    width: 300px;
+}
+
+/* O que for declarado com ponto da seguinte forma: .declaracao é compreendido como classe no CSS */
+
+
+img {
+    border: solid 5px red;
+}
+
+/* O que for declarado como sendo um identificador de tag vai ser aplicado em todas as ocorrencias em que aparecer */
+
+#francisco {
+    border: dotted 5px yellow;
+    width: 300px;
+}
+
+#sao{
+    border: dashed 7px blueviolet;
+    width: 400px;
+}
+
+#um{
+    border: dashed 6px cyan;
+}
+
+/* Quando você declara com # então o tipo 'id' vai ser aplicado! Esse tipo apesar de funcionar não é tão recomendado, pois IDS precisam ser únicos e não se repetem.*/
