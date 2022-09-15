@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cores de fundo em HTML Div</title>
+    <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
+    <style type="text/css">
+        div{
+            width: 300px;
+            height: 200px;
+        }
+        .azul{
+            background-color: blue;
+            border-radius: 500px 500px 0 0;
+            border: 10px solid black;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+            animation: direita .5s ease-in-out alternate infinite;
+        }
+
+        @keyframes direita {
+            from {
+                transform: translate(0px);
+            }
+            to {
+                transform: translate(100px);
+            }
+        }
+        .vermelho{
+            background: #FF0000;
+            border-radius: 0 50px 0 50px;
+            border: 10px dotted black;
+            color: white;
+            text-align: center;
+            padding-top: 120px;
+            animation: amanha .5s ease-in-out alternate infinite;
+        }
+
+        @keyframes amanha {
+            from{
+                transform: translate(100px);
+            }
+            to{
+                transform: translate(0px);
+            }
+        }
+        .verde{
+            background: rgb(0,255,0);
+            border-radius: 0 0 50px 50px;
+            color: white;
+            text-align: center;
+            padding-top: 120px;
+            animation: tarde .5s infinite;
+        }
+        @keyframes tarde
+        {
+            from {
+                transform: rotate(360deg);
+            }
+            to{
+                transform: translate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="azul">
+        <h2>Leonardo</h2>
+    </div>   
+
+    <div class="vermelho">
+            <h2>Bruno</h2>
+    </div>
+
+    <div class="verde">
+          <h2>Gabriel</h3>
+    </div>
+</body>
+</html>
