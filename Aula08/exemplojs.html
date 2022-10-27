@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            video {
+                width: 500px;
+                height: 500px;
+                background-size: cover;
+                float: left;
+            }
+
+            button {
+                display: flex;
+            }
+        </style>
+    </head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>Gatos hahahhaha são tão inocentes tão burros, </p>
+
+<button onclick="document.getElementById('myImage').src='gatoar.mp4'">Gato brincando hahah</button>
+<button onclick="document.getElementById('myImage').src='gatoar2.mp4'">Gato com medo</button>
+<button onclick="document.getElementById('myImage').src='gatopobre.mp4'">Gato pobre hahah tão desafortunado</button>
+<button onclick="document.getElementById('myImage').src='gatobola.mp4'">Gato bola cuidado para não sair rolando haha</button>
+<button onclick="document.getElementById('myImage').src='cachorrosacodeveio.mp4'">Olha esse cachorro mano slk kkkkkk</button>
+<button onclick="document.getElementById('myImage').src='cachorropa.mp4'">Cachorro procurando quem te pergunto kkkk</button>
+
+<video id="myImage" src="gatoar.mp4" autoplay loop> <br>
+
+
+</body>
+</html>
