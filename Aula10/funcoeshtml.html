@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando JS no HTML</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button onclick="funcaoClique()">Clique aqui e seja feliz</button>
+
+    <script>
+        const funcaoClique = () => {
+            const nome = window.prompt('Olá Digite seu nome: ')
+            const idade = window.confirm("Você tem mais de 18 anos? ")
+            if (idade == true) {
+                window.alert("Seu nome é: " + nome + " e você é maior de idade")
+            } else {
+                window.alert("Seu nome é fodase seu menor de idade " )
+            }
+        }
+     </script>
+</body>
+</html>
