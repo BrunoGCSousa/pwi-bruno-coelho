@@ -79,3 +79,103 @@ input[type=button] {
 input[type=button]:hover {
     opacity: 70%;
 }
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(143, 255, 255);
+}
+
+button#click{
+    background-color: rgb(53, 92, 199);
+    border: none;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    animation: nivel1 infinite alternate;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+@keyframes nivel1 {
+    0% {
+        transform: translate(-200px);
+    }
+    100% {
+        transform: translate(200px);
+    }
+}
+
+@keyframes nivel2 {
+    0% {
+        transform: translate(-100px, -200px);
+    }
+    50% {
+        transform: translate(-200px, 100px);
+    }
+    75% {
+        transform: translate(200px, 50px);
+    }
+    100% {
+        transform: translate(-100px, -200px);
+    }
+}
+
+@keyframes nivel3 {
+    0% {
+        transform: translate(-100px, -200px) rotate(95deg);
+    }
+    50% {
+        transform: translate(-200px, 100px) rotate(300deg);
+    }
+    75% {
+        transform: translate(200px, 50px) rotate(50deg);
+    }
+    100% {
+        transform: translate(-100px, -200px) rotate(100deg);
+    }
+}
+
+@keyframes nivel4 {
+    0% {
+        transform: translate(100px, 200px) rotate(-95deg);
+    }
+    50% {
+        transform: translate(200px, -100px) rotate(-300deg);
+    }
+    75% {
+        transform: translate(-200px, -50px) rotate(-50deg);
+    }
+    100% {
+        transform: translate(100px, 200px) rotate(-100deg);
+    }
+}
+
+@keyframes nivel5 {
+    0% {
+        transform: translate(-200px, 200px) rotate(-360deg);
+    }
+    25% {
+        transform: translate(300px, -300px) rotate(0deg);
+    }
+    50% {
+        transform: translate(200px, 200px) rotate(360deg);
+    }
+    75% {
+        transform: translate(-400px, -50px) rotate(780deg);
+    }
+    100% {
+        transform: translate(100px, -300px) rotate(-360deg);
+    }
+}
+
+.velocidades button {
+    padding: 5px 10px;
+    margin: 20px 5px;
+    font-weight: 700;
+}
