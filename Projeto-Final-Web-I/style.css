@@ -14,6 +14,36 @@ body {
     flex-direction: column;
 }
 
+h2 {
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu div {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+
+.menu a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 20px;
+    transition: background 1s;
+}
+
+a:hover {
+    background-color: rgb(44, 44, 44);
+}
+
 table {
     font-size: 1rem;
     border: none;
@@ -178,4 +208,23 @@ button#click{
     padding: 5px 10px;
     margin: 20px 5px;
     font-weight: 700;
+}
+
+.voltar a{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    align-items: center;
+    transition: 1s;
+}
+
+.voltar a:hover {
+    background-color: rgb(218, 218, 218);
+    color: black;
 }
